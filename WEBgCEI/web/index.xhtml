@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.prime.com.tr/ui">
+        
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <p:layout fullPage="true">        
+            <p:layoutUnit position="top" height="75" >  
+                <p style="text-align: center"> WEBgCEI </p>
+            </p:layoutUnit>  
+                        
+            <p:layoutUnit position="left" width="220" height="30" header="Areas de conhecimento">                                  
+                <h:form>                   
+                    <p:menu style="position: relative; width: 94%">  
+                        <p:submenu label="Login">  
+                            <p:menuitem value="Login" actionListener="#{buttonBean.save}" update="messages" icon="ui-icon ui-icon-home"/> 
+                            <p:menuitem value="Registrar" actionListener="#{buttonBean.update}" update="messages" icon="ui-icon ui-icon-arrowrefresh-1-w"/>                                                      
+                            <p:menuitem rendered="false" value="Logout" actionListener="#{buttonBean.delete}" update="messages" ajax="false" icon="ui-icon ui-icon-close"/>  
+                        </p:submenu>  
+                        <p:submenu label="Eventos">  
+                            <p:menuitem value="Gerais" url="http://www.primefaces.org" icon="ui-icon ui-icon-home"/>  
+                            <p:menuitem value="Seus eventos" url="#{request.contextPath}/touch" icon="ui-icon ui-icon-star"/>  
+                        </p:submenu>  
+                    </p:menu> 
+                </h:form>                
+            </p:layoutUnit>  
+
+            <p:layoutUnit position="right" width="200" header="Right" resizable="true" closable="true" collapsible="true">  
+                <h:outputText value="East unit content." />  
+            </p:layoutUnit>  
+
+            <p:layoutUnit position="center">                 
+                <p style="text-align: center"> Eventos </p>
+                <h:form>
+                    <p:dataGrid value="#{eventController.allEvents}" var="event" columns="3"
+                            rows="12">	
+                    <p:column>
+                        <p:panel header="#{event.title}">    
+                            <h:panelGrid columns="1">
+                                <h:outputText value="#{event.presentation}" />
+                                <h:outputText value="#{event.objective}" />                                                   
+                            </h:panelGrid>    
+                        </p:panel>  
+                    </p:column>
+                </p:dataGrid>
+                </h:form>
+            </p:layoutUnit>  
+        </p:layout>  
+    </h:body>    
+</html>
+

@@ -1,0 +1,84 @@
+10
+
+dir
+0
+http://svn.code.sf.net/p/gcei/gcei/WEBgCEI/src/java/gceirental
+http://svn.code.sf.net/p/gcei/gcei
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6bc09da8-e889-42cb-b3b8-840afe1e337a
+
+Event.hbm.xml
+file
+
+
+
+add
+
+Event.java
+file
+
+
+
+add
+
+EventController.java
+file
+
+
+
+add
+
+EventHelper.java
+file
+
+
+
+add
+
+EventId.java
+file
+
+
+
+add
+
+HibernateUtil.java
+file
+
+
+
+add
+
+User.hbm.xml
+file
+
+
+
+add
+
+User.java
+file
+
+
+
+add
+

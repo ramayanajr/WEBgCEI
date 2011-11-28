@@ -1,0 +1,62 @@
+10
+
+dir
+42
+http://svn.code.sf.net/p/gcei/gcei/WEBgCEI/src/java
+http://svn.code.sf.net/p/gcei/gcei
+
+
+
+2011-11-23T01:44:58.579019Z
+41
+ramayanajr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6bc09da8-e889-42cb-b3b8-840afe1e337a
+
+controller
+dir
+
+gceirental
+dir
+
+
+
+add
+
+hibernate.cfg.xml
+file
+0
+
+
+add
+
+hibernate.reveng.xml
+file
+0
+
+
+add
+
+model
+dir
+
+res
+dir
+
+
+
+add
+

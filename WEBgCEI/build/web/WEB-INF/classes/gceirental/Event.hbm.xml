@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24/11/2011 19:23:00 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="gceirental.Event" table="event" catalog="gcei">
+        <composite-id name="id" class="gceirental.EventId">
+            <key-property name="eventid" type="int">
+                <column name="eventid" />
+            </key-property>
+            <key-property name="userid" type="int">
+                <column name="userid" />
+            </key-property>
+        </composite-id>
+        <property name="title" type="string">
+            <column name="title" length="60" />
+        </property>
+        <property name="presentation" type="string">
+            <column name="presentation" length="65535" />
+        </property>
+        <property name="history" type="string">
+            <column name="history" length="65535" />
+        </property>
+        <property name="objective" type="string">
+            <column name="objective" />
+        </property>
+        <property name="themes" type="string">
+            <column name="themes" />
+        </property>
+        <property name="deadline" type="string">
+            <column name="deadline" />
+        </property>
+        <property name="importantDates" type="string">
+            <column name="important_dates" />
+        </property>
+        <property name="schedule" type="string">
+            <column name="schedule" />
+        </property>
+        <property name="organization" type="string">
+            <column name="organization" />
+        </property>
+        <property name="partners" type="string">
+            <column name="partners" />
+        </property>
+    </class>
+</hibernate-mapping>
